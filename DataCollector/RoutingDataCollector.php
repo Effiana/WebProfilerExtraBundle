@@ -44,7 +44,7 @@ class RoutingDataCollector extends DataCollector
      * @param Response   $response  The Response Object
      * @param \Exception $exception The Exception
      */
-    public function collect(Request $request, Response $response, \Exception $exception = null)
+    public function collect(Request $request, Response $response, \Throwable $exception = null)
     {
         $collection = $this->router->getRouteCollection();
         $_ressources = $collection->getResources();

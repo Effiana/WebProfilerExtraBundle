@@ -43,7 +43,7 @@ class TwigDataCollector extends DataCollector
      * @param Response   $response  The Response Object
      * @param \Exception $exception The Exception
      */
-    public function collect(Request $request, Response $response, \Exception $exception = null)
+    public function collect(Request $request, Response $response, \Throwable $exception = null)
     {
         $filters = array();
         $tests = array();

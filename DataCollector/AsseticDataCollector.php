@@ -42,7 +42,7 @@ class AsseticDataCollector extends DataCollector
      * @param Response   $response  The Response Object
      * @param \Exception $exception Exception
      */
-    public function collect(Request $request, Response $response, \Exception $exception = null)
+    public function collect(Request $request, Response $response, \Throwable $exception = null)
     {
         $collections = array();
 
